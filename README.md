@@ -7,6 +7,6 @@ This way when friends visit you, you know who is visiting you or who visited you
 
 The idea is to receive a message before they even ring the doorbell because they are detected on your wifi network.
 
-All you need to do is give these friends a static ip address in your router trough their phones/tablets mac address.
+All you need to do is give these friends a static ip address in your router from their phones/tablets mac address.
 
 
