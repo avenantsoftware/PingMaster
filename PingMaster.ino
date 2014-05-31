@@ -63,11 +63,11 @@ void setup()
 /********** Loop **********/
 void loop()
 {
-  bekenden();
+  pingfriends();
 }
 
 /********** Ping telefoons van bekenden **********/
-void bekenden()
+void pingfriends()
 {
   ICMPEchoReply echoReply1 = ping(Friend1, 4);
   if (echoReply1.status == SUCCESS)
