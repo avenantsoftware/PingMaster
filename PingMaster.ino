@@ -6,7 +6,7 @@
   This way you know who is visiting you when they make contact to you wifi network
   Also usefull to see if friends visited you while you where not at home
 
-  You need to give friends a static ip address on your router trough the mac address of their phones/tablets
+  You need to give friends a static ip address on your router from the mac address of their phones/tablets
 
   Parts needed:
   -Arduino Uno http://www.dx.com/p/uno-r3-atmega328p-uno-r3-development-board-deep-blue-285620
