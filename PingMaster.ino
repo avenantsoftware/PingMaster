@@ -35,7 +35,7 @@ IPAddress Friend3(192,168,2,202);
 IPAddress Friend4(192,168,2,203);
 IPAddress Friend5(192,168,2,204);
 
-// Zet variabelen
+// Set variables
 boolean friend1po = false;
 boolean friend2po = false;
 boolean friend3po = false;
