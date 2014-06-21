@@ -41,6 +41,11 @@ boolean friend2po = false;
 boolean friend3po = false;
 boolean friend4po = false;
 boolean friend5po = false;
+int pingfailed1 = 0;
+int pingfailed2 = 0;
+int pingfailed3 = 0;
+int pingfailed4 = 0;
+int pingfailed5 = 0;
 
 
 SOCKET pingSocket = 0;
@@ -80,7 +85,12 @@ void pingfriends()
   }
   else if (echoReply1.status != SUCCESS)
   {
-    friend1po = false;
+    pingfailed1++;
+    if (pingfailed1 > 500)
+    {
+      friend1po = false;
+      pingfailed1 = 0;
+    }
   } 
   delay(500);
   ICMPEchoReply echoReply2 = ping(Friend2, 4);
@@ -94,7 +104,12 @@ void pingfriends()
   }
   else if (echoReply2.status != SUCCESS)
   {
-    friend2po = false;
+    pingfailed2++;
+    if (pingfailed1 > 500)
+    {
+      friend2po = false;
+      pingfailed2 = 0;
+    }
   }  
   delay(500);
   ICMPEchoReply echoReply3 = ping(Friend3, 4);
@@ -108,7 +123,12 @@ void pingfriends()
   }
   else if (echoReply3.status != SUCCESS)
   {
-    friend3po = false;
+    pingfailed3++;
+    if (pingfailed3 > 500)
+    {
+      friend3po = false;
+      pingfailed3 = 0;
+    }
   }  
   delay(500);
   ICMPEchoReply echoReply4 = ping(Friend4, 4);
@@ -122,7 +142,12 @@ void pingfriends()
   }
   else if (echoReply4.status != SUCCESS)
   {
-    friend4po = false;
+    pingfailed4++;
+    if (pingfailed4 > 500)
+    {
+      friend4po = false;
+      pingfailed4 = 0;
+    }
   }  
   delay(500);
   ICMPEchoReply echoReply5 = ping(Friend5, 4);
@@ -136,7 +161,12 @@ void pingfriends()
   }
   else if (echoReply5.status != SUCCESS)
   {
-    friend5po = false;
+    pingfailed5++;
+    if (pingfailed5 > 500)
+    {
+      friend5po = false;
+      pingfailed5 = 0;
+    }
   }  
   delay(500);
 }
