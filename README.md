@@ -9,4 +9,5 @@ The idea is to receive a message before they even ring the doorbell because they
 
 All you need to do is give these friends a static ip address in your router from their phones/tablets mac address.
 
+If your friends get new phones, you never have to change the code, just assign the new mac address of their new phone in your router.
 
